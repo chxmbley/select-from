@@ -1,0 +1,14 @@
+{
+  "name": "select-from",
+  "version": "0.1.0",
+  "description": "Run basic SQL-like queries against arrays of similar objects in Javascript",
+  "main": "src/",
+  "scripts": {
+    "test": "mocha ."
+  },
+  "author": "Joshua Chumbley <chumbleyjd@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
