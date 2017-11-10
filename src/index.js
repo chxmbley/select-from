@@ -1,3 +1,5 @@
+const Selection = require('./Selection')
+
 function select() {
   // TODO: Define notation to select nested keys
 
@@ -20,13 +22,13 @@ function select() {
 // as returned by select()
 function selectFrom(keyArray) {
 
-  let fromFn = function(objectArray) {
+  const fromFn = function(objectArray) {
 
     if (!Array.isArray(objectArray))
       throw new Error('Invalid argument passed to from(). Should be an array of objects')
 
     if (!keyArray.length)
-      return objectArray
+      return new Selection(objectArray)
 
     let filteredArray = []
 
@@ -45,7 +47,7 @@ function selectFrom(keyArray) {
         filteredArray.push(obj)
     }
 
-    return filteredArray
+    return new Selection(filteredArray)
 
   }
 
