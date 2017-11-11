@@ -7,6 +7,18 @@
     "web": "node ./build.js"
   },
   "author": "Joshua Chumbley <chumbleyjd@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdChum/select-from.git"
+  },
+  "keywords": [
+    "json",
+    "objects",
+    "filter",
+    "search",
+    "query",
+    "sql"
+  ],
   "license": "WTFPL",
   "devDependencies": {
     "babel-core": "^6.26.0",
