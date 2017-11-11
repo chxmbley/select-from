@@ -30,14 +30,14 @@ const select = require('select-from')
 ## Usage
 
 ```javascript
-let  = [
+let data = [
   { a: true,  b: 'Hello', c: 492 },
   { a: false, b: 'Hello', c: 992 },
   { a: true,  b: 'World', c: 433 }
 ]
 
 select('*')
-  .from()
+  .from(data)
   .where('a')
   .eq(true)
   .done()
